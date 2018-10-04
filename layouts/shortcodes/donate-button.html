@@ -1,0 +1,9 @@
+{{/*
+  comments galore
+*/}}
+{{ if index .Params 0 }}
+<a href="/donate" class="waves-effect waves-light btn">{{ .Get 0 }}</a>
+{{ else }}
+<a href="/donate" class="waves-effect waves-light btn">{{ .Site.Params.donate }}</a>
+{{ end }}
+
